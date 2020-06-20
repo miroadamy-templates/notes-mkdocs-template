@@ -16,9 +16,20 @@ theme:
 markdown_extensions:
     - admonition
     - codehilite  
+    - footnotes
+    - meta
     - toc:
         permalink: True
     - sane_lists
+    - pymdownx.arithmatex
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tabbed
+    - pymdownx.tilde
 
 plugins:
     - search
