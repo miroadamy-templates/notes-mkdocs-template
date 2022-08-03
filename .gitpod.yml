@@ -1,0 +1,22 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: Dev
+    init: |
+      echo 'init script - runs' # runs during prebuild
+      pip install mkdocs
+      gp sync-done pip-inst
+    command: |
+      echo Ready to develop
+      source .env
+
+  - name: Server
+    command: |
+      echo 'start script'
+      echo 'waiting init' && gp sync-await pip-inst
+      mkdocs serve
+
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
