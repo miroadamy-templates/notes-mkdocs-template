@@ -3,7 +3,7 @@ tasks:
   - name: Dev
     init: |
       echo 'init script - runs' # runs during prebuild
-      pip install mkdocs
+      pip install mkdocs mkdocs-meterial
       gp sync-done pip-inst
     command: |
       echo Ready to develop
