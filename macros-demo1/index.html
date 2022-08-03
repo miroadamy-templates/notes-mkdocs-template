@@ -1,0 +1,1234 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="My Site description">
+      
+      
+        <meta name="author" content="Miro Adamy">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Macros - MkDocs Notes Template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#macros" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Notes Template" class="md-header__button md-logo" aria-label="MkDocs Notes Template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Notes Template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Macros
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/example/repository/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SOME-NAME
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Notes Template" class="md-nav__button md-logo" aria-label="MkDocs Notes Template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MkDocs Notes Template
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/example/repository/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SOME-NAME
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Demo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Demo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Demo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown-demo/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Macros
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Macros
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-fields-with-macro" class="md-nav__link">
+    Input fields with macro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-information" class="md-nav__link">
+    Git information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include" class="md-nav__link">
+    Include
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    Footnotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admonition" class="md-nav__link">
+    Admonition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-etc" class="md-nav__link">
+    Notes etc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-types" class="md-nav__link">
+    Other types
+  </a>
+  
+    <nav class="md-nav" aria-label="Other types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pymdown" class="md-nav__link">
+    PyMDown
+  </a>
+  
+    <nav class="md-nav" aria-label="PyMDown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmatex" class="md-nav__link">
+    Arithmatex
+  </a>
+  
+    <nav class="md-nav" aria-label="Arithmatex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more" class="md-nav__link">
+    More
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magic-link" class="md-nav__link">
+    Magic link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mark" class="md-nav__link">
+    Mark
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons" class="md-nav__link">
+    Icons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tasklist" class="md-nav__link">
+    Tasklist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilde" class="md-nav__link">
+    Tilde
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabbed" class="md-nav__link">
+    Tabbed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superfences" class="md-nav__link">
+    Superfences
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-fields-with-macro" class="md-nav__link">
+    Input fields with macro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-information" class="md-nav__link">
+    Git information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include" class="md-nav__link">
+    Include
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    Footnotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admonition" class="md-nav__link">
+    Admonition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-etc" class="md-nav__link">
+    Notes etc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-types" class="md-nav__link">
+    Other types
+  </a>
+  
+    <nav class="md-nav" aria-label="Other types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pymdown" class="md-nav__link">
+    PyMDown
+  </a>
+  
+    <nav class="md-nav" aria-label="PyMDown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmatex" class="md-nav__link">
+    Arithmatex
+  </a>
+  
+    <nav class="md-nav" aria-label="Arithmatex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more" class="md-nav__link">
+    More
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magic-link" class="md-nav__link">
+    Magic link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mark" class="md-nav__link">
+    Mark
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons" class="md-nav__link">
+    Icons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tasklist" class="md-nav__link">
+    Tasklist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilde" class="md-nav__link">
+    Tilde
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabbed" class="md-nav__link">
+    Tabbed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superfences" class="md-nav__link">
+    Superfences
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/example/repository/edit/master/docs/macros-demo1.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="macros">Macros<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h1>
+<p>The documentation is here:</p>
+<p><a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/">macros</a></p>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<p>The price of the product is 12.5.</p>
+<p>See <a href="https://www.acme.com/">more information on the website</a>.</p>
+<p>See <a href="https://www.acme.com/">more information on the website</a>.</p>
+<h2 id="input-fields-with-macro">Input fields with macro<a class="headerlink" href="#input-fields-with-macro" title="Permanent link">&para;</a></h2>
+<p>Username: <input type="text" name="username" value="" size="20"></p>
+<p>Password: <input type="password" name="password" value="" size="20"></p>
+
+<h2 id="git-information">Git information<a class="headerlink" href="#git-information" title="Permanent link">&para;</a></h2>
+<p>281b638 (2022-08-03 16:15:10+00:00) by Miro Adamy</p>
+<table class="pretty" style="background-color: #F0FFFF; border:1px solid #DCDCDC; padding: 5px">
+
+    <th style="border:1px solid #DCDCDC; padding: 5px">Variable</th>
+
+    <th style="border:1px solid #DCDCDC; padding: 5px">Type</th>
+
+    <th style="border:1px solid #DCDCDC; padding: 5px">Content</th>
+
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>status</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>bool</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">True</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>date</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>datetime</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">datetime.datetime(2022, 8, 3, 16, 15, 10, tzinfo=tzlocal())</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>short_commit</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'281b638'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>commit</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'281b638199b003eeacece30619bb01cf3c67b7f3'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>tag</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">''</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>author</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'Miro Adamy'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>author_email</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'miro.adamy@gmail.com'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>committer</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'Miro Adamy'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>committer_email</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'miro.adamy@gmail.com'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>date_ISO</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'Wed Aug 3 16:15:10 2022 +0000'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>message</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'Fix - GH Action'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>raw</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'commit 281b638199b003eeacece30619bb01cf3c67b7f3\nAuthor: Miro Adamy <miro.adamy@gmail.com>\nDate:   Wed Aug 3 16:15:10 2022 +0000\n\n    Fix - GH Action'</td>
+
+        </tr>
+
+        <tr>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><b>root_dir</b></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px"><i>str</i></td>
+
+            <td style="vertical-align:top; border:1px solid #DCDCDC; padding: 5px">'/home/runner/work/notes-mkdocs-template/notes-mkdocs-template'</td>
+
+        </tr>
+
+</table>
+
+<h2 id="include">Include<a class="headerlink" href="#include" title="Permanent link">&para;</a></h2>
+<p>This was in a snippet.</p>
+<p>The attempt to include different file</p>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MkDocs Notes Template</span><span class="w"></span>
+<span class="nt">repo_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/example/repository/</span><span class="w"></span>
+<span class="nt">repo_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SOME-NAME</span><span class="w"></span>
+<span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Site description</span><span class="w"></span>
+<span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Miro Adamy</span><span class="w"></span>
+<span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">(c) 2020 Miro Adamy</span><span class="w"></span>
+
+<span class="nt">nav</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Demo</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Markdown</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown-demo.md</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Macros</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">macros-demo1.md</span><span class="w"></span>
+<span class="nt">theme</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"></span>
+
+<span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codehilite</span><span class="w">  </span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">footnotes</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sane_lists</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.arithmatex</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.emoji</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">emoji_index</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:materialx.emoji.twemoji</span><span class="w"></span>
+<span class="w">        </span><span class="nt">emoji_generator</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:materialx.emoji.to_svg</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tasklist</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">custom_checkbox</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tabbed</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.magiclink</span><span class="w"></span>
+
+<span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">macros</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">include_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span><span class="w"></span>
+
+<span class="nt">extra</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">price</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12.50</span><span class="w"></span>
+<span class="w">    </span><span class="nt">company</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Acme</span><span class="w"></span>
+<span class="w">        </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Laurinska 8</span><span class="w"></span>
+<span class="w">        </span><span class="nt">website</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://www.acme.com/</span><span class="w">    </span>
+</code></pre></div>
+<h2 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h2>
+<p>This is example:</p>
+<div class="highlight"><pre><span></span><code>Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
+</code></pre></div>
+<p>Lorem ipsum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dolor sit amet, consectetur adipiscing elit.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>The content is:</p>
+<div class="highlight"><pre><span></span><code>[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</code></pre></div>
+<p>Or it can be on multiple lines:</p>
+<div class="highlight"><pre><span></span><code>[^2]:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<h2 id="admonition">Admonition<a class="headerlink" href="#admonition" title="Permanent link">&para;</a></h2>
+<p>See <a href="https://squidfunk.github.io/mkdocs-material/extensions/admonition/">docs</a></p>
+<h2 id="notes-etc">Notes etc<a class="headerlink" href="#notes-etc" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>!!! note
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<p>Changing title</p>
+<div class="highlight"><pre><span></span><code>!!! note &quot;Phasellus posuere in sem ut cursus&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Phasellus posuere in sem ut cursus</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<p>No title:</p>
+<div class="highlight"><pre><span></span><code>!!! note &quot;&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+<div class="admonition note">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<h2 id="other-types">Other types<a class="headerlink" href="#other-types" title="Permanent link">&para;</a></h2>
+<ul>
+<li>note, seealso</li>
+<li>abstract, summary, tldr</li>
+<li>info, todo</li>
+<li>tip, hint, important</li>
+<li>success, check, done</li>
+<li>question, help, faq</li>
+<li>warning, caution, attention</li>
+<li>failure, fail, missing</li>
+<li>danger, error</li>
+<li>bug</li>
+<li>example</li>
+<li>quote</li>
+</ul>
+<h3 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<h2 id="pymdown">PyMDown<a class="headerlink" href="#pymdown" title="Permanent link">&para;</a></h2>
+<p>Extension to Material <a href="https://squidfunk.github.io/mkdocs-material/extensions/pymdown/">see this</a></p>
+<h3 id="arithmatex">Arithmatex<a class="headerlink" href="#arithmatex" title="Permanent link">&para;</a></h3>
+<p>Both:</p>
+<div class="highlight"><pre><span></span><code>...
+markdown_extensions:
+  - pymdownx.arithmatex
+---
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+</code></pre></div>
+<p>Allows <a href="https://www.mathjax.org/">MathJax</a>.</p>
+<p>Demo <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">is here</a> <a href="https://www.mathelounge.de/509545/mathjax-latex-basic-tutorial-und-referenz-deutsch">und auch hier</a></p>
+<p>Inline rendering - type
+<span class="arithmatex"><span class="MathJax_Preview">\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}</span><script type="math/tex">\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}</script></span>
+to do inline</p>
+<div class="highlight"><pre><span></span><code>$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
+</code></pre></div>
+<p>or type
+$$ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} $$
+to show</p>
+<div class="highlight"><pre><span></span><code>$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+</code></pre></div>
+<h4 id="more">More<a class="headerlink" href="#more" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>$$ \sqrt – \sqrt{x^3} \sqrt[3]{\frac xy} \sqrt[3]{\frac xy} $$
+</code></pre></div>
+<div class="arithmatex">
+<div class="MathJax_Preview"> \sqrt – \sqrt{x^3} \sqrt[3]{\frac xy} \sqrt[3]{\frac xy} </div>
+<script type="math/tex; mode=display"> \sqrt – \sqrt{x^3} \sqrt[3]{\frac xy} \sqrt[3]{\frac xy} </script>
+</div>
+<p><div class="highlight"><pre><span></span><code>{n+1 \choose 2k}
+\binom{n+1}{2k}
+</code></pre></div>
+$$ {n+1 \choose 2k}
+\binom{n+1}{2k} $$</p>
+<h3 id="magic-link">Magic link<a class="headerlink" href="#magic-link" title="Permanent link">&para;</a></h3>
+<p>Allows to use http links directly. Read more <a href="https://squidfunk.github.io/mkdocs-material/extensions/pymdown/">https://squidfunk.github.io/mkdocs-material/extensions/pymdown/</a></p>
+<h3 id="mark">Mark<a class="headerlink" href="#mark" title="Permanent link">&para;</a></h3>
+<p>Adds higlight using two equal signs</p>
+<div class="highlight"><pre><span></span><code>In this sentence ==this will be highlighted== as well as ==this==.
+</code></pre></div>
+<p>In this sentence ==this will be highlighted== as well as ==this==.</p>
+<h3 id="icons">Icons<a class="headerlink" href="#icons" title="Permanent link">&para;</a></h3>
+<p>Add</p>
+<div class="highlight"><pre><span></span><code>- pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+</code></pre></div>
+<p>and then use </p>
+<div class="highlight"><pre><span></span><code>* :material-account-circle: – we can use Material Design icons
+* :fontawesome-regular-laugh-wink: – we can also use FontAwesome icons
+* :octicons-octoface: – that&#39;s not all, we can also use GitHub&#39;s Octicons
+</code></pre></div>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 19.2c-2.5 0-4.71-1.28-6-3.2.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.232 7.232 0 0 1-6 3.2M12 5a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-3A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10Z"/></svg></span> – we can use Material Design icons</li>
+<li>:fontawesome-regular-laugh-wink: – we can also use FontAwesome icons</li>
+<li>:octicons-octoface: – that's not all, we can also use GitHub's Octicons</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li><a href="https://material.io/resources/icons/?icon=dashboard&amp;style=baseline">https://material.io/resources/icons/?icon=dashboard&amp;style=baseline</a></li>
+<li><a href="https://www.w3schools.com/icons/fontawesome_icons_brand.asp">https://www.w3schools.com/icons/fontawesome_icons_brand.asp</a></li>
+<li><a href="https://material.io/resources/icons/?style=baseline">https://material.io/resources/icons/?style=baseline</a></li>
+<li><a href="https://primer.style/octicons/">https://primer.style/octicons/</a></li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>:fontawesome-regular-amazon: - Amazon</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3 7 3V5a2 2 0 0 0-2-2Z"/></svg></span> - Material bookmark</li>
+<li>:octicons-settings: - Octicons settings</li>
+</ul>
+<h3 id="tasklist">Tasklist<a class="headerlink" href="#tasklist" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>* [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+* [x] Nulla lobortis egestas semper
+* [x] Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est
+* [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [x] Sed egestas felis quis elit dapibus, ac aliquet turpis mattis
+    * [ ] Praesent sed risus massa
+* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+* [ ] Nulla vel eros venenatis, imperdiet enim id, faucibus nisi
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Nulla lobortis egestas semper</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vestibulum convallis sit amet nisi a tincidunt<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In hac habitasse platea dictumst</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In scelerisque nibh non dolor mollis congue sed et metus</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sed egestas felis quis elit dapibus, ac aliquet turpis mattis</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Praesent sed risus massa</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nulla vel eros venenatis, imperdiet enim id, faucibus nisi</li>
+</ul>
+<h3 id="tilde">Tilde<a class="headerlink" href="#tilde" title="Permanent link">&para;</a></h3>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/tilde/">Tilde</a> provides an easy way to <del>strike through cross out text</del>. The portion of text that should be erased must be enclosed in two tildes <code>~~...~~</code> and the extension will take care of the rest.</p>
+<div class="highlight"><pre><span></span><code>[Tilde](https://facelessuser.github.io/pymdown-extensions/extensions/tilde/) 
+provides an easy way to ~~strike through cross out text~~. 
+The portion of text that should be erased must be enclosed in two tildes `~~...~~` and the extension will take care of the rest.
+</code></pre></div>
+<h3 id="tabbed">Tabbed<a class="headerlink" href="#tabbed" title="Permanent link">&para;</a></h3>
+<p>Tabbed
+Tabbed adds support for creating tabbed groups of Markdown content.</p>
+<div class="highlight"><pre><span></span><code>=== &quot;Fruit List&quot;
+    - :apple: Apple
+    - :banana: Banana
+    - :kiwi: Kiwi
+
+=== &quot;Fruit Table&quot;
+    Fruit           | Color
+    --------------- | -----
+    :apple:  Apple  | Red
+    :banana: Banana | Yellow
+    :kiwi:   Kiwi   | Green
+</code></pre></div>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Fruit List</label><div class="tabbed-content">
+<ul>
+<li><img alt="🍎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34e.svg" title=":apple:" /> Apple</li>
+<li><img alt="🍌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34c.svg" title=":banana:" /> Banana</li>
+<li><img alt="🥝" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f95d.svg" title=":kiwi:" /> Kiwi</li>
+</ul>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Fruit Table</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Fruit</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="🍎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34e.svg" title=":apple:" />  Apple</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><img alt="🍌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f34c.svg" title=":banana:" /> Banana</td>
+<td>Yellow</td>
+</tr>
+<tr>
+<td><img alt="🥝" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f95d.svg" title=":kiwi:" />   Kiwi</td>
+<td>Green</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 id="superfences">Superfences<a class="headerlink" href="#superfences" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>~~~~{.python hl_lines=&quot;1 3&quot;}
+# This line is emphasized
+# This line isn&#39;t
+# This line is emphasized
+~~~~
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="hll"><span class="c1"># This line is emphasized</span>
+</span><span class="c1"># This line isn&#39;t</span>
+<span class="hll"><span class="c1"># This line is emphasized</span>
+</span></code></pre></div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../markdown-demo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Markdown" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Markdown
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      (c) 2020 Miro Adamy
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
