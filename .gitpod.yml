@@ -3,7 +3,10 @@ tasks:
   - name: Dev
     init: |
       echo 'init script - runs' # runs during prebuild
-      pip install mkdocs mkdocs-meterial
+      pip install --upgrade pip
+      pip install mkdocs 'mkdocs-minify-plugin>=0.2' 
+      pip install 'mkdocs-git-revision-date-localized-plugin>=0.4' 'mkdocs-awesome-pages-plugin>=2.2.1' 'mkdocs-macros-plugin'
+      pip install mkdocs-material
       gp sync-done pip-inst
     command: |
       echo Ready to develop
